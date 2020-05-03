@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ostream": "cpp"
+    },
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+}
