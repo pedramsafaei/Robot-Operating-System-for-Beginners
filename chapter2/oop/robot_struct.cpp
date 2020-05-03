@@ -24,31 +24,40 @@ public:
 
 void Robot_Class::move_robot()
 {
-	cout<<"Moving Robot"<<endl;
+	cout << "Moving Robot" << endl;
 }
 
 void Robot_Class::stop_robot()
 {
-	cout<<"Stopping Robot"<<endl;
+	cout << "Stopping Robot" << endl;
 }
 
 int main()
 {
+	/*
+	
+  if you use a struct or class pointer then you would need to use 
+  -> operator 
+
+  Robot_Class *robot_2;
+  robot_2 = new Robot_Class;
+  robot_2 -> id = 2;
+  robot_2 -> robot_name = "Something Robot";
+
+	*/
 	Robot_Struct robot_1;
 	Robot_Class robot_2;
-
-
 
 	robot_1.id = 2;
 	robot_1.robot_name = "Mobile robot";
 
-
 	robot_2.id = 3;
 	robot_2.robot_name = "Humanoid robot";
 
-
-	cout<<"ID="<<robot_1.id<<"\t"<<"Robot Name: "<<robot_1.robot_name<<endl;
-	cout<<"ID="<<robot_2.id<<"\t"<<"Robot Name: "<<robot_2.robot_name<<endl;
+	cout << "ID=" << robot_1.id << "\t"
+			 << "Robot Name: " << robot_1.robot_name << endl;
+	cout << "ID=" << robot_2.id << "\t"
+			 << "Robot Name: " << robot_2.robot_name << endl;
 
 	robot_2.move_robot();
 	robot_2.stop_robot();
